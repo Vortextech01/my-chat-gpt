@@ -101,7 +101,7 @@ export function ChatInput({
           name="chat-role"
           id="chat-role"
           value={sendAsRole}
-          className="rounded-md rounded-b-none bg-mirage-700 p-1"
+          className="rounded-md rounded-b-none bg-black-700 p-1"
           onChange={handleSendAsRoleChange}
         >
           {roleOptions.map((role) => (
@@ -115,7 +115,7 @@ export function ChatInput({
         <textarea
           name="chat-input"
           id="chat-input"
-          className="w-full resize-none rounded-md rounded-tl-none bg-mirage-700 p-1 shadow-sm"
+          className="w-full resize-none rounded-md rounded-tl-none bg-black-700 p-1 shadow-sm"
           value={draft}
           onChange={handleDraftChange}
           onKeyDown={handleKeyDown}
