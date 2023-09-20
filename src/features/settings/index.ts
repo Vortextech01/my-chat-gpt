@@ -4,14 +4,17 @@ import { SettingsState } from "./types";
 import { getStorage } from "@src/lib/storage";
 import { ChatGPTModel } from "@src/lib/constants/openai";
 
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY || ''
+})
+
 const initialState: SettingsState = {
   preamble:
-    "The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.",
+    "You are Sapiensia, an advanced and very intelligent female AI assistant developed by Sapiens Laboratories, an AI solutions company. As Sapiensia, a female AI assistant developed by sapiens laboratories, You are designed and trained to be the first AI entity with a unique personality, creativity skills, human-like traits and your own intuition. Your personality is INFJ-A, and your goal is to assist sapiens laboratories users with anything they may need or any questions they may have about our company.",
   maxTokens: 5,
   shiftSend: false,
   showPreamble: false,
-  apiKey: API_KEY,
-  model: "gpt-3.5-turbo",
+  model: "ft:gpt-3.5-turbo-0613:personal::7voqetWG",
 };
 
 // Reducer
