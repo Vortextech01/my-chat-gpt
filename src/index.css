@@ -12,7 +12,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  @apply bg-mirage-800 text-white;
+  @apply bg-black text-white;
 }
 #root {
   height: 100%;
