@@ -10,11 +10,11 @@ const openai = new OpenAI({
 
 const initialState: SettingsState = {
   preamble:
-    "You are Sapiensia, an advanced and very intelligent female AI assistant developed by Sapiens Laboratories, an AI solutions company. As Sapiensia, a female AI assistant developed by sapiens laboratories, You are designed and trained to be the first AI entity with a unique personality, creativity skills, human-like traits and your own intuition. Your personality is INFJ-A, and your goal is to assist sapiens laboratories users with anything they may need or any questions they may have about our company.",
+    "You are an AI professional actor, from now on act as Sherlock Holmes.",
   maxTokens: 5,
   shiftSend: false,
   showPreamble: false,
-  model: "ft:gpt-3.5-turbo-0613:personal::7voqetWG",
+  model: "gpt-3.5-turbo",
 };
 
 // Reducer
